@@ -44,7 +44,7 @@ public class ClientEvents {
 //	}
 	
 	@SubscribeEvent
-	public static void onGuiRender(ContainerScreenEvent.DrawBackground event) {
+	public static void onGuiRender(ContainerScreenEvent.Render.Background event) {
 		Minecraft minecraft = Minecraft.getInstance();
 		if (InventoryCrafterClient.inventoryButton == null || minecraft.player == null || minecraft.level == null || !(minecraft.screen instanceof InventoryScreen screen)) return;
 		
